@@ -1,0 +1,32 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+x1'(t) = -p1*x1(t)*x3(t)/(x1(t)+x2(t)+x3(t)+x4(t))
+x2'(t) = p1*x1(t)*x3(t)/(x1(t)+x2(t)+x3(t)+x4(t)) - p2*x2(t)
+x3'(t) = p2*x2(t) - (p3+p4)*x3(t)
+x4'(t) = p3*x3(t)
+x5'(t) = p4*x3(t)
+
+State variables:
+x1(t), x2(t), x3(t), x4(t), x5(t)
+
+Unknown parameters:
+p1, p2, p3, p4
+
+Known constants or inputs:
+None
+
+Initial conditions:
+x1(0), x2(0), x3(0), x4(0), x5(0) are known.
+
+Observed output:
+y1(t) = p2*x2(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+The aggregate active quantity is x1(t)+x2(t)+x3(t)+x4(t); x5(t) records a cumulative transition total.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

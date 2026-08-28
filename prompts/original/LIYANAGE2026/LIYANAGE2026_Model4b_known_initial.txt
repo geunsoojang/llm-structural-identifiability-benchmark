@@ -1,0 +1,33 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+S'(t) = -beta*S(t)*I(t)/(S(t)+E(t)+I(t)+R(t))
+E'(t) = beta*S(t)*I(t)/(S(t)+E(t)+I(t)+R(t)) - k*E(t)
+I'(t) = k*E(t) - (gamma+delta)*I(t)
+R'(t) = gamma*I(t)
+D'(t) = delta*I(t)
+
+State variables:
+S(t), E(t), I(t), R(t), D(t)
+
+Unknown parameters:
+beta, k, gamma, delta
+
+Known constants or inputs:
+None
+
+Initial conditions:
+S(0), E(0), I(0), R(0), D(0) are known.
+
+Observed output:
+y1(t) = k*E(t)
+y2(t) = delta*I(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+The living population size is S(t)+E(t)+I(t)+R(t); D(t) records cumulative disease-induced deaths.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

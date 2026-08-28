@@ -1,0 +1,45 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+S(t) = C1 - E(t) - Q(t) - int_y1(t)/rho
+Is(t) = C2 - In(t) - Ih(t) - IICU(t) - Iv(t) - R(t) + int_y1(t)/rho - int_y2(t)
+Den(t) = S(t) + E(t) + In(t) + Is(t) + R(t) + Q(t)
+F(t) = (betae*E(t) + betan*In(t) + betas*Is(t))*S(t)/Den(t)
+E'(t) = F(t) - (1/14)*E(t)
+In'(t) = (1 - rho)*(1/14)*E(t) - gamman*In(t)
+Ih'(t) = alpha1*Is(t) - (alpha2 + gammah + muh)*Ih(t)
+IICU'(t) = alpha2*Ih(t) - (alpha3 + gammaICU + muICU)*IICU(t)
+Iv'(t) = alpha3*IICU(t) - (gammav + muv)*Iv(t)
+R'(t) = gamman*In(t) + gammas*Is(t) + gammah*Ih(t) + gammaICU*IICU(t) + gammav*Iv(t)
+Q'(t) = eta*S(t)
+int_y1'(t) = (1/14)*rho*E(t)
+int_y2'(t) = muh*Ih(t) + muICU*IICU(t) + muv*Iv(t)
+
+State variables:
+E(t), In(t), Ih(t), IICU(t), Iv(t), R(t), Q(t), int_y1(t), int_y2(t)
+
+Unknown parameters:
+betae, betan, betas, rho, gamman, gammas, alpha1, alpha2, alpha3, gammah, gammaICU, gammav, muh, muICU, muv, eta, C1, C2
+
+Known constants or inputs:
+None
+
+Initial conditions:
+E(0), In(0), Ih(0), IICU(0), Iv(0), R(0), Q(0) are known.
+int_y1(0), int_y2(0) are unknown.
+
+Observed output:
+y1(t) = (1/14)*rho*E(t)
+y2(t) = muh*Ih(t) + muICU*IICU(t) + muv*Iv(t)
+y3(t) = IICU(t)
+y4(t) = Iv(t)
+y5(t) = int_y1(t)
+y6(t) = int_y2(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

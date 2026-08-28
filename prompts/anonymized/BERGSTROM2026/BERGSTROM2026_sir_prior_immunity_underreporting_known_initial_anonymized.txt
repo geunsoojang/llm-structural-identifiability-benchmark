@@ -1,0 +1,32 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+x1'(t) = -(p1*x2(t)*x1(t))/(p2*c2)
+x2'(t) = (p1*x2(t)*x1(t))/c2 - c1*x2(t)
+
+State variables:
+x1(t), x2(t)
+
+Unknown parameters:
+p1, p2, p3
+
+Known constants or inputs:
+c1, c2, c3
+
+Initial conditions:
+x2(0) = c3
+x1(0) = c2*(1-p3) - c3/p2
+
+Observed output:
+y1(t) = x2(t)
+
+Assumptions:
+The observed output variable is available continuously over a time interval and is noise-free.
+The initial observed-state value c3 is known exactly and is positive.
+The parameter-dependent initial condition for x1(0) holds exactly.
+All unknown parameters are positive, 0 < p2 < 1, and 0 <= p3 < 1.
+The known constants c1 and c2 are positive.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

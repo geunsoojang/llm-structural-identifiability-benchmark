@@ -1,0 +1,32 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+S'(t) = -(beta*Ir(t)*S(t))/(p*n)
+Ir'(t) = (beta*Ir(t)*S(t))/n - gamma*Ir(t)
+
+State variables:
+S(t), Ir(t)
+
+Unknown parameters:
+beta, p, pi
+
+Known constants or inputs:
+gamma, n, Ir0
+
+Initial conditions:
+Ir(0) = Ir0
+S(0) = n*(1-pi) - Ir0/p
+
+Observed output:
+y1(t) = Ir(t)
+
+Assumptions:
+The observed output variable is available continuously over a time interval and is noise-free.
+The initial reported infectious value Ir0 is known exactly and is positive.
+The parameter-dependent initial condition for S(0) holds exactly.
+All unknown parameters are positive, 0 < p < 1, and 0 <= pi < 1.
+The known constants gamma and n are positive.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

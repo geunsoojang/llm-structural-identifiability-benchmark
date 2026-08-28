@@ -1,0 +1,35 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+Sv'(t) = lambdav - (betaI*Sv(t)*I(t) + betaA*Sv(t)*A(t))/N - muv*Sv(t)
+Iv'(t) = (betaI*Sv(t)*I(t) + betaA*Sv(t)*A(t))/N - muv*Iv(t)
+S'(t) = -betav*Iv(t)*S(t)/N
+I'(t) = rho*betav*Iv(t)*S(t)/N - gamma*I(t)
+A'(t) = (1-rho)*betav*Iv(t)*S(t)/N - gamma*A(t)
+R'(t) = gamma*I(t) + gamma*A(t)
+
+State variables:
+Sv(t), Iv(t), S(t), I(t), A(t), R(t)
+
+Unknown parameters:
+betaI, betaA, betav, gamma, lambdav, muv, rho, N, c
+
+Known constants or inputs:
+None
+
+Initial conditions:
+Sv(0), Iv(0), S(0), I(0), A(0), R(0) are unknown.
+The unknown constant c equals S(0).
+
+Observed output:
+y1(t) = rho*(c - S(t))
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+The output y1(t) is cumulative new symptomatic human incidence. 
+The human population size N is constant.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

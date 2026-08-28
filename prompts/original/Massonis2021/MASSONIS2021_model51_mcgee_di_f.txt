@@ -1,0 +1,36 @@
+For the following ODE model, determine which parameters are globally identifiable, locally identifiable, or non-identifiable from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+S'(t) = -beta*S(t)*I(t)/N - q*beta_d*S(t)*Di(t)/N + nu*N - mu0*S(t)
+E'(t) = beta*S(t)*I(t)/N + q*beta_d*S(t)*Di(t)/N - sigma*E(t) - theta_e*phi_e*E(t) - mu0*E(t)
+I'(t) = sigma*E(t) - gamma*I(t) - mu_i*I(t) - theta_i*phi_i*I(t) - mu0*I(t)
+De'(t) = theta_e*phi_e*E(t) - sigma_d*De(t) - mu0*De(t)
+Di'(t) = theta_i*phi_i*I(t) + sigma_d*De(t) - gamma_d*Di(t) - mu_d*Di(t) - mu0*Di(t)
+R'(t) = gamma*I(t) + gamma_d*Di(t) - mu0*R(t)
+F'(t) = mu_i*I(t) + mu_d*Di(t)
+
+State variables:
+S(t), E(t), I(t), De(t), Di(t), R(t), F(t)
+
+Unknown parameters:
+q, mu_i, mu_d, sigma, sigma_d, theta_e, theta_i, gamma, gamma_d, beta, beta_d, phi_i, phi_e, mu0
+
+Known constants or inputs:
+nu, N
+
+Initial conditions:
+S(0), E(0), I(0), De(0), Di(0), R(0), F(0) are unknown.
+
+Observed output:
+y1(t) = Di(t)
+y2(t) = F(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All unknown parameters are positive and constant.
+Known constants are positive.
+All state initial conditions are unknown and nonnegative.
+
+Report:
+1. Classification of each parameter.
+2. If individual parameters are not identifiable but identifiable combinations exist, state those combinations.

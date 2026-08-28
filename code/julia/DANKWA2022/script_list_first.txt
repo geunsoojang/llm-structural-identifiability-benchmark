@@ -1,0 +1,14 @@
+hv_s1_host_incidence.jl
+hv_s1_host_prevalence.jl
+hv_s2_host_incidence_known_nh.jl
+hv_s2_host_prevalence_known_nh.jl
+hv_s3a_host_incidence_prevalence.jl
+hv_s3b_host_vector_data.jl
+hv_s4a_host_incidence_prevalence_known_nh.jl
+hv_s4b_host_vector_data_known_nh.jl
+sir_s1_incidence.jl
+sir_s1_prevalence.jl
+sir_s2_incidence_known_nh.jl
+sir_s2_prevalence_known_nh.jl
+sir_s3_incidence_prevalence.jl
+sir_s4_incidence_prevalence_known_nh.jl

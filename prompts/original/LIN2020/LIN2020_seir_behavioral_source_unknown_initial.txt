@@ -1,0 +1,36 @@
+For the following ODE model, determine which parameters are globally identifiable, locally identifiable, or non-identifiable from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+beta(t) = beta0*(1 - alpha_reaction*g_action(t))*(1 - D(t)/N(t))^kappa_behavior
+S'(t) = -beta0*F(t)*S(t)/N(t) - beta(t)*S(t)*I(t)/N(t) - m(t)*S(t)
+E'(t) = beta0*F(t)*S(t)/N(t) + beta(t)*S(t)*I(t)/N(t) - sigma*E(t) - m(t)*E(t)
+I'(t) = sigma*E(t) - gamma*I(t) - m(t)*I(t)
+R'(t) = gamma*I(t) - m(t)*R(t)
+N'(t) = -m(t)*N(t)
+D'(t) = d_severe*gamma*I(t) - lambda_perception*D(t)
+C'(t) = sigma*E(t)
+
+State variables:
+S(t), E(t), I(t), R(t), N(t), D(t), C(t)
+
+Unknown parameters:
+beta0, sigma, gamma, d_severe, lambda_perception, alpha_reaction, kappa_behavior
+
+Known constants or inputs:
+S(0), F(t), m(t), g_action(t)
+
+Initial conditions:
+E(0), I(0), R(0), N(0), D(0), C(0) are unknown.
+
+Observed output:
+y1(t) = C(t)
+
+Assumptions:
+The observed output variable is available continuously over a time interval and is noise-free.
+All unknown parameters are positive.
+The known input trajectories F(t), m(t), and g_action(t) are externally specified.
+All state initial conditions are unknown and nonnegative, and N(0) is positive.
+
+Report:
+1. Classification of each unknown parameter.
+2. If individual parameters are not identifiable but identifiable combinations exist, state those combinations.

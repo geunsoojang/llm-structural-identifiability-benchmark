@@ -1,0 +1,46 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+Su'(t) = -buu*Su(t)*(Iu(t) + Au(t) + Pu(t)) - buv*Su(t)*(Iv(t) + Av(t) + Pv(t)) - theta*V(t)
+Eu'(t) = -sigma1*Eu(t) + buu*Su(t)*(Iu(t) + Au(t) + Pu(t)) + buv*Su(t)*(Iv(t) + Av(t) + Pv(t))
+Pu'(t) = (1 - phiu)*sigma1*Eu(t) - sigma2*Pu(t)
+Au'(t) = phiu*sigma1*Eu(t) - muu*Au(t)
+Uu'(t) = muu*Au(t)
+Iu'(t) = sigma2*Pu(t) - (gammar_u + gammah_u)*Iu(t)
+Hu'(t) = gammah_u*Iu(t) - (kappar_u + kappad_u)*Hu(t)
+Ru'(t) = gammar_u*Iu(t) + kappar_u*Hu(t)
+Du'(t) = kappad_u*Hu(t)
+Sv'(t) = -bvv*Sv(t)*(Iv(t) + Av(t) + Pv(t)) - bvu*Sv(t)*(Iu(t) + Au(t) + Pu(t)) + theta*V(t)
+Ev'(t) = -sigma1*Ev(t) + bvv*Sv(t)*(Iv(t) + Av(t) + Pv(t)) + bvu*Sv(t)*(Iu(t) + Au(t) + Pu(t))
+Pv'(t) = (1 - phiv)*sigma1*Ev(t) - sigma2*Pv(t)
+Av'(t) = phiv*sigma1*Ev(t) - muv*Av(t)
+Uv'(t) = muv*Av(t)
+Iv'(t) = sigma2*Pv(t) - (gammar_v + gammah_v)*Iv(t)
+Hv'(t) = gammah_v*Iv(t) - (kappar_v + kappad_v)*Hv(t)
+Rv'(t) = gammar_v*Iv(t) + kappar_v*Hv(t)
+Dv'(t) = kappad_v*Hv(t)
+
+State variables:
+Su(t), Eu(t), Pu(t), Au(t), Uu(t), Iu(t), Hu(t), Ru(t), Du(t), Sv(t), Ev(t), Pv(t), Av(t), Uv(t), Iv(t), Hv(t), Rv(t), Dv(t)
+
+Unknown parameters:
+buu, buv, bvu, bvv, sigma1, sigma2, theta, phiu, phiv, muu, muv, gammar_u, gammah_u, gammar_v, gammah_v, kappar_u, kappad_u, kappar_v, kappad_v
+
+Known constants or inputs:
+V(t) is a known input.
+
+Initial conditions:
+Du(0) and Dv(0) are known from the observed outputs y1(0) and y2(0).
+All other state initial conditions are unknown.
+
+Observed output:
+y1(t) = Du(t)
+y2(t) = Dv(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.

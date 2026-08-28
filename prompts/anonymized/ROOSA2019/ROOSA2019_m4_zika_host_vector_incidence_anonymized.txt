@@ -1,0 +1,37 @@
+﻿For the following ODE model, determine which parameters are globally identifiable, locally identifiable, or non-identifiable from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+x1'(t) = -p1*p3*x1(t)*x9(t)/c1 - p4*x1(t)*(p2*x2(t) + x3(t) + p13*x4(t))/c1
+x2'(t) = p14*(p1*p3*x1(t)*x9(t)/c1 + p4*x1(t)*(p2*x2(t) + x3(t) + p13*x4(t))/c1) - p9*x2(t)
+x3'(t) = p9*x2(t) - p7*x3(t)
+x4'(t) = p7*x3(t) - p8*x4(t)
+x5'(t) = (1 - p14)*(p1*p3*x1(t)*x9(t)/c1 + p4*x1(t)*(p2*x2(t) + x3(t) + p13*x4(t))/c1) - p6*x5(t)
+x6'(t) = p8*x4(t) + p6*x5(t)
+x7'(t) = -p1*p5*x7(t)*(p12*x2(t) + x3(t))/c1 - p11*x7(t)
+x8'(t) = p1*p5*x7(t)*(p12*x2(t) + x3(t))/c1 - (p10 + p11)*x8(t)
+x9'(t) = p10*x8(t) - p11*x9(t)
+x10'(t) = p9*x2(t)
+
+State variables:
+x1(t), x2(t), x3(t), x4(t), x5(t), x6(t), x7(t), x8(t), x9(t), x10(t)
+
+Unknown parameters:
+p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14
+
+Known constants or inputs:
+c1, c2
+
+Initial conditions:
+x1(0), x2(0), x3(0), x4(0), x5(0), x6(0), x7(0), x8(0), x9(0), x10(0) are unknown.
+
+Observed output:
+y1(t) = p9*x2(t)
+
+Assumptions:
+The observed output variables are available continuously over p1 time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+The known initial conditions x1(0), x2(0), x3(0), x4(0), x5(0), x6(0), x7(0), x8(0), x9(0), x10(0) are positive.
+
+Report:
+1. Classification of each parameter.
+2. If individual parameters are not identifiable but identifiable combinations exist, state those combinations.

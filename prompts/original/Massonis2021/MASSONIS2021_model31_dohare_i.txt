@@ -1,0 +1,39 @@
+For the following ODE model, determine which parameters are globally identifiable, locally identifiable, or non-identifiable from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+S'(t) = -alpha*(E(t) + I(t) + A(t))*S(t)/N - sigma*S(t)
+E'(t) = alpha*(E(t) + I(t) + A(t))*S(t)/N - beta1*E(t)
+I'(t) = beta1*h*E(t) + beta2*r*A(t) - phi*q*I(t) - gamma*(1-q)*I(t)
+A'(t) = beta1*(1-h)*E(t) - beta2*r*A(t) - gamma*(1-r)*A(t)
+J'(t) = phi*q*I(t) - gamma*J(t)
+R'(t) = gamma*(1-q)*I(t) + gamma*(1-r)*A(t) + gamma*J(t)
+
+State variables:
+S(t), E(t), I(t), A(t), J(t), R(t)
+
+Unknown parameters:
+alpha, sigma, h, r, q, f, beta1, beta2, phi, gamma, I0
+
+Known constants or inputs:
+N
+
+Initial conditions:
+S(0) = 0.9*N
+E(0) = 9*(I0 + A(0))
+I(0) = I0
+A(0) = I0*f
+J(0) = 0
+R(0) = 0
+
+Observed output:
+y1(t) = I(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All unknown parameters are positive and constant.
+Known constants are positive.
+The initial conditions satisfy the stated parameter-dependent relationships exactly.
+
+Report:
+1. Classification of each parameter.
+2. If individual parameters are not identifiable but identifiable combinations exist, state those combinations.

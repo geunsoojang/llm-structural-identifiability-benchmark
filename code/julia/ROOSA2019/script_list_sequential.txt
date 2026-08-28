@@ -1,0 +1,4 @@
+m1_seir_incidence.jl
+m2_seiar_diagnosis.jl
+m3_ebola_legrand_incidence.jl
+m4_zika_host_vector_incidence.jl

@@ -1,0 +1,36 @@
+﻿For the following ODE model, determine which parameters are globally identifiable, locally identifiable, or non-identifiable from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+q1(t) = p1*(1 - p6*u3(t))*(1 - x6(t)/x5(t))^p7
+x1'(t) = -p1*u1(t)*x1(t)/x5(t) - q1(t)*x1(t)*x3(t)/x5(t) - u2(t)*x1(t)
+x2'(t) = p1*u1(t)*x1(t)/x5(t) + q1(t)*x1(t)*x3(t)/x5(t) - p2*x2(t) - u2(t)*x2(t)
+x3'(t) = p2*x2(t) - p3*x3(t) - u2(t)*x3(t)
+x4'(t) = p3*x3(t) - u2(t)*x4(t)
+x5'(t) = -u2(t)*x5(t)
+x6'(t) = p4*p3*x3(t) - p5*x6(t)
+x7'(t) = p2*x2(t)
+
+State variables:
+x1(t), x2(t), x3(t), x4(t), x5(t), x6(t), x7(t)
+
+Unknown parameters:
+p1, p2, p3, p4, p5, p6, p7
+
+Known constants or inputs:
+x1(0), u1(t), u2(t), u3(t)
+
+Initial conditions:
+x2(0), x3(0), x4(0), x5(0), x6(0), x7(0) are unknown.
+
+Observed output:
+y1(t) = x7(t)
+
+Assumptions:
+The observed output variable is available continuously over a time interval and is noise-free.
+All unknown parameters are positive.
+The known input trajectories u1(t), u2(t), and u3(t) are externally specified.
+All state initial conditions are unknown and nonnegative, and x5(0) is positive.
+
+Report:
+1. Classification of each unknown parameter.
+2. If individual parameters are not identifiable but identifiable combinations exist, state those combinations.

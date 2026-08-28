@@ -1,0 +1,37 @@
+For the following ODE model, determine which parameters are globally identifiable, locally identifiable, or non-identifiable from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+Sh'(t) = -a*b*Sh(t)*Iv(t)/Nh - beta*Sh(t)*(alpha*Eh(t) + Ih1(t) + tau*Ih2(t))/Nh
+Eh'(t) = theta*(a*b*Sh(t)*Iv(t)/Nh + beta*Sh(t)*(alpha*Eh(t) + Ih1(t) + tau*Ih2(t))/Nh) - kappa_h*Eh(t)
+Ih1'(t) = kappa_h*Eh(t) - gamma_h1*Ih1(t)
+Ih2'(t) = gamma_h1*Ih1(t) - gamma_h2*Ih2(t)
+Ah'(t) = (1 - theta)*(a*b*Sh(t)*Iv(t)/Nh + beta*Sh(t)*(alpha*Eh(t) + Ih1(t) + tau*Ih2(t))/Nh) - gamma_h*Ah(t)
+Rh'(t) = gamma_h2*Ih2(t) + gamma_h*Ah(t)
+Sv'(t) = -a*c*Sv(t)*(rho*Eh(t) + Ih1(t))/Nh - mu_v*Sv(t)
+Ev'(t) = a*c*Sv(t)*(rho*Eh(t) + Ih1(t))/Nh - (kappa_v + mu_v)*Ev(t)
+Iv'(t) = kappa_v*Ev(t) - mu_v*Iv(t)
+C'(t) = kappa_h*Eh(t)
+
+State variables:
+Sh(t), Eh(t), Ih1(t), Ih2(t), Ah(t), Rh(t), Sv(t), Ev(t), Iv(t), C(t)
+
+Unknown parameters:
+a, alpha, b, beta, c, gamma_h, gamma_h1, gamma_h2, kappa_h, kappa_v, mu_v, rho, tau, theta
+
+Known constants or inputs:
+Nh, Nv
+
+Initial conditions:
+Sh(0), Eh(0), Ih1(0), Ih2(0), Ah(0), Rh(0), Sv(0), Ev(0), Iv(0), C(0) are unknown.
+
+Observed output:
+y1(t) = kappa_h*Eh(t)
+
+Assumptions:
+The observed output variables are available continuously over a time interval and are noise-free.
+All parameters are positive, and initial conditions are nonnegative.
+The known initial conditions Sh(0), Eh(0), Ih1(0), Ih2(0), Ah(0), Rh(0), Sv(0), Ev(0), Iv(0), C(0) are positive.
+
+Report:
+1. Classification of each parameter.
+2. If individual parameters are not identifiable but identifiable combinations exist, state those combinations.

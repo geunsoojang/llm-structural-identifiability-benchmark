@@ -1,0 +1,28 @@
+# Credentials and local configuration
+api.txt
+asu_api.txt
+*.key
+*.pem
+.env
+.env.*
+
+# Julia generated files
+.julia/
+
+# Editor, operating-system, and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.log.tmp
+EMAIL_TO_PROFESSORS.md
+
+# Kept locally but excluded from the public data-and-code repository
+data/
+data/formal_analysis/
+data/processed/
+figures/
+manuscript/
+code/julia/**/result/
+code/julia/**/results/
+code/julia/**/run_logs/

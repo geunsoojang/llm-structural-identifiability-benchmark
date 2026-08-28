@@ -1,0 +1,12 @@
+slir_s1_incidence.jl
+slir_s1_prevalence.jl
+slir_s2_incidence_known_nh.jl
+slir_s2_prevalence_known_nh.jl
+slir_s3_incidence_prevalence.jl
+slir_s4_incidence_prevalence_known_nh.jl
+slirq_s1_incidence.jl
+slirq_s1_prevalence.jl
+slirq_s2_incidence_known_nh.jl
+slirq_s2_prevalence_known_nh.jl
+slirq_s3_incidence_prevalence.jl
+slirq_s4_incidence_prevalence_known_nh.jl

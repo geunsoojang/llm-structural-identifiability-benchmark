@@ -1,0 +1,39 @@
+For the following ODE model, determine the structural identifiability of each unknown parameter from the observed output. Do not use tools or code; reason from the model equations only.
+
+ODE system:
+Sh'(t) = mu_h*Nh - beta_vh*Sh(t)*Iv(t)/Nh - mu_h*Sh(t)
+Lh'(t) = beta_vh*Sh(t)*Iv(t)/Nh - alpha_h*Lh(t) - mu_h*Lh(t)
+Ih'(t) = alpha_h*Lh(t) - gamma_h*Ih(t) - mu_h*Ih(t)
+Rh'(t) = gamma_h*Ih(t) - mu_h*Rh(t)
+Sv'(t) = mu_v*Nv - beta_hv*Sv(t)*Ih(t)/Nh - mu_v*Sv(t)
+Lv'(t) = beta_hv*Sv(t)*Ih(t)/Nh - alpha_v*Lv(t) - mu_v*Lv(t)
+Iv'(t) = alpha_v*Lv(t) - mu_v*Iv(t)
+Nh = Sh(t) + Lh(t) + Ih(t) + Rh(t) for all t
+Nv = Sv(t) + Lv(t) + Iv(t) for all t
+
+State variables:
+Sh(t), Lh(t), Ih(t), Rh(t), Sv(t), Lv(t), Iv(t)
+
+Unknown parameters:
+beta_hv, beta_vh, lambda_v, mu_h, mu_v, Nh, Nv
+
+Known constants or inputs:
+alpha_h, alpha_v, gamma_h
+
+Initial conditions:
+Sh(0), Lh(0), Ih(0), Rh(0), Sv(0), Lv(0), Iv(0) are unknown.
+
+Observed output:
+y1(t) = alpha_h*Lh(t)
+y2(t) = Ih(t)/Nh
+y3(t) = alpha_v*Lv(t)
+y4(t) = lambda_v*(Sv(t) + Lv(t) + Iv(t))
+
+Assumptions:
+The observed outputs are available continuously over a time interval and are noise-free.
+All model parameters and population sizes are positive, and all initial conditions are nonnegative.
+The population constraints hold exactly, so the population sizes are constant but unknown.
+
+Report:
+1. Classify each unknown parameter as globally identifiable, locally identifiable, or non-identifiable.
+2. If individual parameters are non-identifiable but identifiable combinations exist, state those combinations.
