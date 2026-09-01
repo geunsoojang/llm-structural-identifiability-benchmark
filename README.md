@@ -4,7 +4,7 @@ This repository contains the benchmark materials and formal verification code fo
 
 > Evaluating large language models for structural identifiability analysis of epidemic models: a retrospective benchmark
 
-The benchmark contains 93 model scenarios from 14 source studies, 737 parameter-level reference classifications, Original and Anonymized prompts, and Julia code used for formal structural-identifiability checks.
+The benchmark contains 88 model scenarios from 14 source studies, 697 parameter-level reference classifications, Original and Anonymized prompts, and Julia code used for formal structural-identifiability checks.
 
 ## Repository contents
 
@@ -17,7 +17,7 @@ Processed analysis outputs, manuscript figures, and manuscript source files are 
 
 ## Reference-table revision
 
-The current reference table incorporates the user-supplied StructuralIdentifiability.jl result for Dankwa et al.'s `slirq_s1_prevalence` scenario. The revision changes only the applicable Dankwa reference classifications and then rescored the frozen model responses; it does not overwrite or regenerate any model response.
+The current reference table incorporates the user-supplied StructuralIdentifiability.jl result for Dankwa et al.'s `slirq_s1_prevalence` scenario and the source-paper local classifications for `vector_s1_host_prevalence`. Five other Dankwa scenarios were excluded because their available results established only at least local identifiability and did not resolve the global-versus-local class. The revision rescored the preserved model responses for the retained scenarios; it did not overwrite or regenerate any model response.
 
 ## Reproducing formal checks
 
@@ -25,8 +25,8 @@ The `code/julia/` directory contains the model encodings used with `StructuralId
 
 ## Primary data files
 
-- Parameter-level reference: `benchmark/ground_truth_93.csv`
-- Scenario manifest: `benchmark/benchmark_scenarios_93.csv`
+- Parameter-level reference: `benchmark/ground_truth_88.csv`
+- Scenario manifest: `benchmark/benchmark_scenarios_88.csv`
 - Original prompts: `prompts/original/`
 - Anonymized prompts: `prompts/anonymized/`
 

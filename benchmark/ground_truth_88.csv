@@ -1,4 +1,4 @@
-﻿paper,model_key,parameter,formal_class,source_type,source_file,source_location,qualification,note
+paper,model_key,parameter,formal_class,source_type,source_file,source_location,qualification,note
 Akman2025,AKMAN2025_covid_turkiye_cases_deaths_icu_ventilation,betae,global,paper,results/manuscript_tables_20260726/reference_parameter_detail.csv,validated parameter-level reference,,
 Akman2025,AKMAN2025_covid_turkiye_cases_deaths_icu_ventilation,betan,global,paper,results/manuscript_tables_20260726/reference_parameter_detail.csv,validated parameter-level reference,,
 Akman2025,AKMAN2025_covid_turkiye_cases_deaths_icu_ventilation,betas,global,paper,results/manuscript_tables_20260726/reference_parameter_detail.csv,validated parameter-level reference,,
@@ -113,17 +113,11 @@ DANKWA2022,DANKWA2022_slir_s3_incidence_prevalence,gamma,global,paper,ref/DANKWA
 DANKWA2022,DANKWA2022_slir_s3_incidence_prevalence,N,global,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_slir_s4_incidence_prevalence_known_natural_history,beta,global,paper,ref/DANKWA2022.pdf,Table 4,,
 DANKWA2022,DANKWA2022_slir_s4_incidence_prevalence_known_natural_history,N,global,paper,ref/DANKWA2022.pdf,Table 4,,
-DANKWA2022,DANKWA2022_slirq_s1_incidence,alpha,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_slirq_s1_incidence,beta,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_slirq_s1_incidence,eta,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_slirq_s1_incidence,gamma,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_slirq_s1_incidence,sigma,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_slirq_s1_incidence,N,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_slirq_s1_prevalence,alpha,local,user_provided_julia_result,results/ground_truth_93_slirq_s1_prevalence_revised_20260827/slirq_s1_prevalence_user_result_20260827.txt,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
-DANKWA2022,DANKWA2022_slirq_s1_prevalence,beta,global,user_provided_julia_result,results/ground_truth_93_slirq_s1_prevalence_revised_20260827/slirq_s1_prevalence_user_result_20260827.txt,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
-DANKWA2022,DANKWA2022_slirq_s1_prevalence,eta,local,user_provided_julia_result,results/ground_truth_93_slirq_s1_prevalence_revised_20260827/slirq_s1_prevalence_user_result_20260827.txt,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
-DANKWA2022,DANKWA2022_slirq_s1_prevalence,gamma,local,user_provided_julia_result,results/ground_truth_93_slirq_s1_prevalence_revised_20260827/slirq_s1_prevalence_user_result_20260827.txt,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
-DANKWA2022,DANKWA2022_slirq_s1_prevalence,sigma,global,user_provided_julia_result,results/ground_truth_93_slirq_s1_prevalence_revised_20260827/slirq_s1_prevalence_user_result_20260827.txt,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
+DANKWA2022,DANKWA2022_slirq_s1_prevalence,alpha,local,user_provided_julia_result,,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
+DANKWA2022,DANKWA2022_slirq_s1_prevalence,beta,global,user_provided_julia_result,,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
+DANKWA2022,DANKWA2022_slirq_s1_prevalence,eta,local,user_provided_julia_result,,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
+DANKWA2022,DANKWA2022_slirq_s1_prevalence,gamma,local,user_provided_julia_result,,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
+DANKWA2022,DANKWA2022_slirq_s1_prevalence,sigma,global,user_provided_julia_result,,"user-provided Julia output, 2026-08-27",,"Mapped a,b,e,g,s to alpha,beta,eta,gamma,sigma. N was not evaluated and retains the paper's at-least-local label."
 DANKWA2022,DANKWA2022_slirq_s1_prevalence,N,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
 DANKWA2022,DANKWA2022_slirq_s2_incidence_known_natural_history,beta,global,paper,ref/DANKWA2022.pdf,Table 2,,
 DANKWA2022,DANKWA2022_slirq_s2_incidence_known_natural_history,N,global,paper,ref/DANKWA2022.pdf,Table 2,,
@@ -137,40 +131,16 @@ DANKWA2022,DANKWA2022_slirq_s3_incidence_prevalence,sigma,global,paper,ref/DANKW
 DANKWA2022,DANKWA2022_slirq_s3_incidence_prevalence,N,global,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_slirq_s4_incidence_prevalence_known_natural_history,beta,global,paper,ref/DANKWA2022.pdf,Table 4,,
 DANKWA2022,DANKWA2022_slirq_s4_incidence_prevalence_known_natural_history,N,global,paper,ref/DANKWA2022.pdf,Table 4,,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,alpha_h,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,alpha_v,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,beta_hv,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,beta_vh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,gamma_h,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,lambda_v,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,"lambda_v only enters the detected-vector-count output, which is absent in this scenario."
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,mu_h,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,mu_v,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,Nh,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_incidence,Nv,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,
-DANKWA2022,DANKWA2022_vector_s1_host_prevalence,alpha_h,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_prevalence,alpha_v,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_prevalence,beta_hv,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
+DANKWA2022,DANKWA2022_vector_s1_host_prevalence,alpha_h,local,paper,ref/DANKWA2022.pdf,Table 1,,Table 1 labels this parameter s.l.i.; coded as local per user decision on 2026-09-01. The table footnote states that the global-identifiability computation timed out.
+DANKWA2022,DANKWA2022_vector_s1_host_prevalence,alpha_v,local,paper,ref/DANKWA2022.pdf,Table 1,,Table 1 labels this parameter s.l.i.; coded as local per user decision on 2026-09-01. The table footnote states that the global-identifiability computation timed out.
+DANKWA2022,DANKWA2022_vector_s1_host_prevalence,beta_hv,local,paper,ref/DANKWA2022.pdf,Table 1,,Table 1 labels this parameter s.l.i.; coded as local per user decision on 2026-09-01. The table footnote states that the global-identifiability computation timed out.
 DANKWA2022,DANKWA2022_vector_s1_host_prevalence,beta_vh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,
-DANKWA2022,DANKWA2022_vector_s1_host_prevalence,gamma_h,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
+DANKWA2022,DANKWA2022_vector_s1_host_prevalence,gamma_h,local,paper,ref/DANKWA2022.pdf,Table 1,,Table 1 labels this parameter s.l.i.; coded as local per user decision on 2026-09-01. The table footnote states that the global-identifiability computation timed out.
 DANKWA2022,DANKWA2022_vector_s1_host_prevalence,lambda_v,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,"lambda_v only enters the detected-vector-count output, which is absent in this scenario."
-DANKWA2022,DANKWA2022_vector_s1_host_prevalence,mu_h,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s1_host_prevalence,mu_v,local,paper,ref/DANKWA2022.pdf,Table 1,at_least_local_global_computation_timed_out,
+DANKWA2022,DANKWA2022_vector_s1_host_prevalence,mu_h,local,paper,ref/DANKWA2022.pdf,Table 1,,Table 1 labels this parameter s.l.i.; coded as local per user decision on 2026-09-01. The table footnote states that the global-identifiability computation timed out.
+DANKWA2022,DANKWA2022_vector_s1_host_prevalence,mu_v,local,paper,ref/DANKWA2022.pdf,Table 1,,Table 1 labels this parameter s.l.i.; coded as local per user decision on 2026-09-01. The table footnote states that the global-identifiability computation timed out.
 DANKWA2022,DANKWA2022_vector_s1_host_prevalence,Nh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,
 DANKWA2022,DANKWA2022_vector_s1_host_prevalence,Nv,non-identifiable,paper,ref/DANKWA2022.pdf,Table 1,,
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,beta_hv,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,beta_vh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,lambda_v,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,"lambda_v only enters the detected-vector-count output, which is absent in this scenario."
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,mu_h,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,mu_v,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,Nh,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_incidence_known_natural_history,Nv,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,beta_hv,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,beta_vh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,lambda_v,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,"lambda_v only enters the detected-vector-count output, which is absent in this scenario."
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,mu_h,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,mu_v,local,paper,ref/DANKWA2022.pdf,Table 2,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,Nh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,
-DANKWA2022,DANKWA2022_vector_s2_host_prevalence_known_natural_history,Nv,non-identifiable,paper,ref/DANKWA2022.pdf,Table 2,,
 DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,alpha_h,global,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,alpha_v,global,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,beta_hv,global,paper,ref/DANKWA2022.pdf,Table 3,,
@@ -181,16 +151,6 @@ DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,mu_h,global,paper,ref/DANKW
 DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,mu_v,global,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,Nh,global,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_vector_s3_host_and_vector_data,Nv,global,paper,ref/DANKWA2022.pdf,Table 3,,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,alpha_h,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,alpha_v,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,beta_hv,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,beta_vh,non-identifiable,paper,ref/DANKWA2022.pdf,Table 3,,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,gamma_h,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,lambda_v,non-identifiable,paper,ref/DANKWA2022.pdf,Table 3,,"lambda_v only enters the detected-vector-count output, which is absent in this scenario."
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,mu_h,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,mu_v,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,Nh,local,paper,ref/DANKWA2022.pdf,Table 3,at_least_local_global_computation_timed_out,
-DANKWA2022,DANKWA2022_vector_s3_host_incidence_prevalence,Nv,non-identifiable,paper,ref/DANKWA2022.pdf,Table 3,,
 DANKWA2022,DANKWA2022_vector_s4_host_and_vector_data_known_natural_history,beta_hv,global,paper,ref/DANKWA2022.pdf,Table 4,,
 DANKWA2022,DANKWA2022_vector_s4_host_and_vector_data_known_natural_history,beta_vh,global,paper,ref/DANKWA2022.pdf,Table 4,,
 DANKWA2022,DANKWA2022_vector_s4_host_and_vector_data_known_natural_history,lambda_v,global,paper,ref/DANKWA2022.pdf,Table 4,,
